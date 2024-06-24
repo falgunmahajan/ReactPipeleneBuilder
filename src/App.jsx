@@ -1,14 +1,17 @@
-import ReactFlow, { Background, Controls } from 'reactflow';
+
 import 'reactflow/dist/style.css';
+import AddNodesEdges from './components/AddNodesEdges';
+import ReactFlowComponent from './components/ReactFlowComponent';
 // import './App.css'
 
 function App() {
-
+  
   return (
-   <ReactFlow>
-    <Background variant='dots'/>
-    <Controls/>
-   </ReactFlow>
+    <div className="h-screen">
+      <AddNodesEdges/>
+      <ReactFlowComponent/>
+    </div>
+  
   )
 }
 
